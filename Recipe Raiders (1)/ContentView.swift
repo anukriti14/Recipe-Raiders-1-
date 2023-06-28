@@ -10,6 +10,8 @@ import SwiftUI
 struct ContentView: View {
     let green = Color(red: 0.659, green: 0.773, blue: 0.408)
     let beige = Color(red: 0.941, green: 0.827, blue: 0.725)
+    let forestGreen = Color(red: 0, green: 0.2, blue: 0.125)
+    
     var body: some View {
         ZStack {
             green.ignoresSafeArea()
