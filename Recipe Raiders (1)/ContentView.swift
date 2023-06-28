@@ -21,7 +21,7 @@ struct ContentView: View {
                         .cornerRadius(30)
                         .padding()
                     HStack (spacing: 100) {
-                        Text("MOMOS!")
+                        Text("MOMOS")
                             .font(.title)
                             .fontWeight(.black)
                         Text ("Nepali cuisine")
