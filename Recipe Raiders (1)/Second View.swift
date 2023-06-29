@@ -76,6 +76,18 @@ struct ContentView: View {
                 }
                 .navigationTitle(":dumpling:")
                 .navigationBarTitleDisplayMode(.inline)
+                
+                NavigationLink(destination: ContentView()) {
+                    Text("Main Menu")
+                        .font(.body)
+                        .foregroundColor(forestGreen)
+                        .fontWeight(.regular)
+                        .padding()
+                        .background(Rectangle()
+                            .foregroundColor(blue))
+                        .cornerRadius(30)
+                        .padding()
+                }
             }
         }
     }
