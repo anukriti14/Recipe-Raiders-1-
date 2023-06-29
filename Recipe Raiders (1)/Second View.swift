@@ -34,7 +34,7 @@ struct ContentView: View {
                             .multilineTextAlignment(.center)
                         
                     }
-                    Text("                     history                  ")
+                    Text("                     History                  ")
                         .font(.headline)
                         .foregroundColor(forestGreen)
                         .fontWeight(.regular)
