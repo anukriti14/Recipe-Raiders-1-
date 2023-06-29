@@ -32,7 +32,6 @@ struct ContentView: View {
                             .fontWeight(.black)
                             .foregroundColor(forestGreen)
                             .multilineTextAlignment(.center)
-                        
                     }
                     Text("                     History                  ")
                         .font(.headline)
@@ -42,20 +41,15 @@ struct ContentView: View {
                         .background(Rectangle()
                             .foregroundColor(blue))
                         .cornerRadius(30)
-                    
-                    
-                    
                     Text("Momo was a Newari food that originated in the 14th century in the Kathmandu valley. It was later introduced to Tibet, China and as far away as Korea & Japan by a Nepali princess.")
-
                         .font(.body)
                         .foregroundColor(forestGreen)
                         .fontWeight(.regular)
-                        .padding()
+                        .padding(20)
                         .background(Rectangle()
                             .foregroundColor(beige))
                         .cornerRadius(40)
-                    
-                    
+                        .padding()
                     Text("                   Ingredients                      ")
                         .font(.body)
                         .foregroundColor(forestGreen)
@@ -70,17 +64,14 @@ struct ContentView: View {
                         ForEach(momosIngredients, id: \.self) { ingredient in
                             Text(ingredient)
                                 .font(.body)
-                            .foregroundColor(forestGreen)
-                            .fontWeight(.regular)
-                            
+                                .foregroundColor(forestGreen)
+                                .fontWeight(.regular)
                         }
-                     
                     }
                     .padding()
                     .background(Rectangle()
                         .foregroundColor(beige))
                     .cornerRadius(40)
-                    
                     
                 }
                 .navigationTitle(":dumpling:")
