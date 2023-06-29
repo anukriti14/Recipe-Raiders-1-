@@ -12,7 +12,7 @@ struct ContentView: View {
     let beige = Color(red: 0.941, green: 0.827, blue: 0.725)
     let forestGreen = Color(red: 0, green: 0.2, blue: 0.125)
     let blue = Color(red: 0.757, green: 0.816, blue:0.906)
-    
+    let momosIngredients = ["2 cup of minced meat", "1 grated onion", "Some finely chopped coriander", "2 tablespoons of ginger paste", "2 tablespoons of garlic paste", "Half a tablespoon of coriander powder", "Half a tablespoon of turmeric", "Half a tablespoon of cumin powder", "2 tablespoons of grated chilli", "2 tablespoons of vegetable oil", "2 tablespoons of salt", "4.25 cups of flour"]
     var body: some View {
         ZStack {
             green.ignoresSafeArea()
@@ -45,7 +45,8 @@ struct ContentView: View {
                     
                     
                     
-                    Text("In Newari, one of Nepal’s oldest languages, ‘mome’ means cooking by steaming. ‘Momo’ is to Nepal what pizza is to Italy, and is available in every restaurant, hotel and household of Katmandu and other parts of Nepal. Momo is like Mount Everest – one of the symbols of Nepal. Now its popularity has spread beyond national boundaries and, thanks largely to Nepalese communities living abroad, it is growing popular in other parts of the world, too.")
+                    Text("Momo was a Newari food that originated in the 14th century in the Kathmandu valley. It was later introduced to Tibet, China and as far away as Korea & Japan by a Nepali princess.")
+
                         .font(.body)
                         .foregroundColor(forestGreen)
                         .fontWeight(.regular)
@@ -64,14 +65,23 @@ struct ContentView: View {
                             .foregroundColor(blue))
                         .cornerRadius(30)
                         .padding()
-                    Text ("INSERT INGREDIENTS")
-                        .font(.body)
-                        .foregroundColor(forestGreen)
-                        .fontWeight(.regular)
-                        .padding()
-                        .background(Rectangle()
-                            .foregroundColor(beige))
-                        .cornerRadius(40)
+                  
+                    VStack() {
+                        ForEach(momosIngredients, id: \.self) { ingredient in
+                            Text(ingredient)
+                                .font(.body)
+                            .foregroundColor(forestGreen)
+                            .fontWeight(.regular)
+                            
+                        }
+                     
+                    }
+                    .padding()
+                    .background(Rectangle()
+                        .foregroundColor(beige))
+                    .cornerRadius(40)
+                    
+                    
                 }
                 .navigationTitle(":dumpling:")
                 .navigationBarTitleDisplayMode(.inline)
