@@ -27,16 +27,15 @@ struct ContentView: View {
                         .cornerRadius(40)
                         .padding()
                     HStack (spacing: 100) {
-                        Text("MOMOS")
-                            .font(.title)
+                        Text("🥟  MOMOS  🥟")
+                            .font(.largeTitle)
                             .fontWeight(.black)
                             .foregroundColor(forestGreen)
-                        Text ("Nepali cuisine")
-                            .fontWeight(.bold)
-                            .foregroundColor(forestGreen)
+                            .multilineTextAlignment(.center)
+                        
                     }
-                    Text("       history        ")
-                        .font(.body)
+                    Text("                    history                  ")
+                        .font(.headline)
                         .foregroundColor(forestGreen)
                         .fontWeight(.regular)
                         .padding()
@@ -44,7 +43,7 @@ struct ContentView: View {
                             .foregroundColor(blue))
                         .cornerRadius(30)
                     
-                
+                    
                     
                     Text("In Newari, one of Nepal’s oldest languages, ‘mome’ means cooking by steaming. ‘Momo’ is to Nepal what pizza is to Italy, and is available in every restaurant, hotel and household of Katmandu and other parts of Nepal. Momo is like Mount Everest – one of the symbols of Nepal. Now its popularity has spread beyond national boundaries and, thanks largely to Nepalese communities living abroad, it is growing popular in other parts of the world, too.")
                         .font(.body)
@@ -56,7 +55,7 @@ struct ContentView: View {
                         .cornerRadius(40)
                     
                     
-                    Text("  Ingredients  ")
+                    Text("                   Ingredients                      ")
                         .font(.body)
                         .foregroundColor(forestGreen)
                         .fontWeight(.regular)
@@ -65,6 +64,14 @@ struct ContentView: View {
                             .foregroundColor(blue))
                         .cornerRadius(30)
                         .padding()
+                    Text ("INSERT INGREDIENTS")
+                        .font(.body)
+                        .foregroundColor(forestGreen)
+                        .fontWeight(.regular)
+                        .padding()
+                        .background(Rectangle()
+                            .foregroundColor(beige))
+                        .cornerRadius(40)
                 }
                 .navigationTitle(":dumpling:")
                 .navigationBarTitleDisplayMode(.inline)
