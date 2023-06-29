@@ -11,6 +11,7 @@
 		CB4F0A892A4CD66B006493BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4F0A882A4CD66B006493BB /* ContentView.swift */; };
 		CB4F0A8B2A4CD66F006493BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB4F0A8A2A4CD66F006493BB /* Assets.xcassets */; };
 		CB4F0A8E2A4CD66F006493BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB4F0A8D2A4CD66F006493BB /* Preview Assets.xcassets */; };
+		CB4F0A952A4CDE13006493BB /* Second View.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4F0A942A4CDE13006493BB /* Second View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		CB4F0A882A4CD66B006493BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CB4F0A8A2A4CD66F006493BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB4F0A8D2A4CD66F006493BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CB4F0A942A4CDE13006493BB /* Second View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Second View.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				CB4F0A862A4CD66B006493BB /* Recipe_Raiders__1_App.swift */,
 				CB4F0A882A4CD66B006493BB /* ContentView.swift */,
+				CB4F0A942A4CDE13006493BB /* Second View.swift */,
 				CB4F0A8A2A4CD66F006493BB /* Assets.xcassets */,
 				CB4F0A8C2A4CD66F006493BB /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB4F0A892A4CD66B006493BB /* ContentView.swift in Sources */,
+				CB4F0A952A4CDE13006493BB /* Second View.swift in Sources */,
 				CB4F0A872A4CD66B006493BB /* Recipe_Raiders__1_App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
